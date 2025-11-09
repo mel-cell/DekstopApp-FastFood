@@ -14,7 +14,7 @@
         <ScrollViewer VerticalScrollBarVisibility="Auto"
                       HorizontalScrollBarVisibility="Disabled">
             
-            <UniformGrid Columns="3" Rows="1" HorizontalAlignment="Stretch">
+            <UniformGrid Columns="3" Rows="1" HorizontalAlignment="Center">
                 
                 <!-- Burger Card -->
                 <Border Width="500" 
@@ -26,40 +26,40 @@
                         CornerRadius="8"
                         Padding="20">
                     
-                    <StackPanel Spacing="15" VerticalAlignment="Top">
+                    <Grid RowDefinitions="Auto, *, Auto">
                         
                         <!-- Title -->
-                        <TextBlock Text="Burger"
+                        <TextBlock Grid.Row="0"
+                                   Text="Burger"                                                       Foreground="#555"
                                    FontSize="20"
-                                    Foreground="#555"
                                    FontWeight="Bold"
                                    HorizontalAlignment="Center"
                                    TextAlignment="Center"
                                    Margin="0, 0, 0, 10"/>
                         
-                        <!-- Image -->
-                        <Border Height="250"
-                                Background="White"
-                                CornerRadius="8"
-                                HorizontalAlignment="Center">
-                            <Image Source="/Assets/cheeseburger.png"
-                                   Stretch="Uniform"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"/>
-                        </Border>
-                        
-                        <!-- Description -->
-                        <TextBlock Text="Lorem ipsum is a dummy text which is used as a placeholder"
-                                   FontSize="14"
-                                   Foreground="#555"
-                                   TextWrapping="Wrap"
-                                   TextTrimming="CharacterEllipsis"
-                                   MaxHeight="80"
-                                   HorizontalAlignment="Center"
-                                   Margin="0, 10, 0, 15"/>
+                        <!-- Image and Description -->
+                        <StackPanel Grid.Row="1" Spacing="15" VerticalAlignment="Center">
+                            <Border Height="250"
+                                    Background="White"
+                                    CornerRadius="8"
+                                    HorizontalAlignment="Center">
+                                <Image Source="/Assets/cheeseburger.png"
+                                       Stretch="Uniform"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"/>
+                            </Border>
+                            
+                            <TextBlock Text="Lorem ipsum is a dummy text which is used as a placeholder"
+                                       FontSize="14"
+                                       Foreground="#555"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="CharacterEllipsis"
+                                       MaxHeight="80"
+                                       HorizontalAlignment="Center"/>
+                        </StackPanel>
                         
                         <!-- Price and Button -->
-                        <StackPanel Orientation="Horizontal" 
+                        <StackPanel Grid.Row="2" Orientation="Horizontal" 
                                     HorizontalAlignment="Stretch" 
                                     Spacing="20" 
                                     VerticalAlignment="Bottom">
@@ -79,7 +79,7 @@
                                     Padding="10, 5"/>
                         </StackPanel>
                         
-                    </StackPanel>
+                    </Grid>
                 </Border>
                 
                 <!-- Cake Card -->
@@ -91,40 +91,41 @@
                         CornerRadius="8"
                         Padding="20">
                     
-                    <StackPanel Spacing="15" VerticalAlignment="Top">
+                    <Grid RowDefinitions="Auto, *, Auto">
                         
                         <!-- Title -->
-                        <TextBlock Text="Cake"
+                        <TextBlock Grid.Row="0"
+                                   Text="Cake"
+                                   Foreground="#555"
                                    FontSize="20"
-                                    Foreground="#555"
                                    FontWeight="Bold"
                                    HorizontalAlignment="Center"
                                    TextAlignment="Center"
                                    Margin="0, 0, 0, 10"/>
                         
-                        <!-- Image for Cake -->
-                        <Border Height="250"
-                                Background="Transparent"
-                                CornerRadius="8"
-                                HorizontalAlignment="Center">
-                            <Image Source="/Assets/cake.png"
-                                   Stretch="Uniform"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"/>
-                        </Border>
-                        
-                        <!-- Description -->
-                        <TextBlock Text="Lorem ipsum is a dummy text which is used as a placeholder"
-                                   FontSize="14"
-                                   Foreground="#555"
-                                   TextWrapping="Wrap"
-                                   TextTrimming="CharacterEllipsis"
-                                   MaxHeight="80"
-                                   HorizontalAlignment="Center"
-                                   Margin="0, 10, 0, 15"/>
+                        <!-- Image and Description -->
+                        <StackPanel Grid.Row="1" Spacing="15" VerticalAlignment="Center">
+                            <Border Height="250"
+                                    Background="Transparent"
+                                    CornerRadius="8"
+                                    HorizontalAlignment="Center">
+                                <Image Source="/Assets/cake.png"
+                                       Stretch="Uniform"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"/>
+                            </Border>
+                            
+                            <TextBlock Text="Lorem ipsum is a dummy text which is used as a placeholder"
+                                       FontSize="14"
+                                       Foreground="#555"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="CharacterEllipsis"
+                                       MaxHeight="80"
+                                       HorizontalAlignment="Center"/>
+                        </StackPanel>
                         
                         <!-- Price and Button -->
-                        <StackPanel Orientation="Horizontal" 
+                        <StackPanel Grid.Row="2" Orientation="Horizontal" 
                                     HorizontalAlignment="Stretch" 
                                     Spacing="20" 
                                     VerticalAlignment="Bottom">
@@ -144,7 +145,7 @@
                                     Padding="10, 5"/>
                         </StackPanel>
                         
-                    </StackPanel>
+                    </Grid>
                 </Border>
                 
                 <!-- Pizza Card -->
@@ -156,40 +157,41 @@
                         CornerRadius="8"
                         Padding="20">
                     
-                    <StackPanel Spacing="15" VerticalAlignment="Top">
+                    <Grid RowDefinitions="Auto, *, Auto">
                         
                         <!-- Title -->
-                        <TextBlock Text="Pizza"
+                        <TextBlock Grid.Row="0"
+                                   Text="Pizza"                                    
+                                   Foreground="#555"
                                    FontSize="20"
-                                    Foreground="#555"
                                    FontWeight="Bold"
                                    HorizontalAlignment="Center"
                                    TextAlignment="Center"
                                    Margin="0, 0, 0, 10"/>
                         
-                        <!-- Image for Pizza -->
-                        <Border Height="250"
-                                Background="Transparent"
-                                CornerRadius="8"
-                                HorizontalAlignment="Center">
-                            <Image Source="/Assets/pidzza.png"
-                                   Stretch="Uniform"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"/>
-                        </Border>
-                        
-                        <!-- Description -->
-                        <TextBlock Text="Lorem ipsum is a dummy text which is used as a placeholder"
-                                   FontSize="14"
-                                   Foreground="#555"
-                                   TextWrapping="Wrap"
-                                   TextTrimming="CharacterEllipsis"
-                                   MaxHeight="80"
-                                   HorizontalAlignment="Center"
-                                   Margin="0, 10, 0, 15"/>
+                        <!-- Image and Description -->
+                        <StackPanel Grid.Row="1" Spacing="15" VerticalAlignment="Center">
+                            <Border Height="250"
+                                    Background="Transparent"
+                                    CornerRadius="8"
+                                    HorizontalAlignment="Center">
+                                <Image Source="/Assets/pidzza.png"
+                                       Stretch="Uniform"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"/>
+                            </Border>
+                            
+                            <TextBlock Text="Lorem ipsum is a dummy text which is used as a placeholder"
+                                       FontSize="14"
+                                       Foreground="#555"
+                                       TextWrapping="Wrap"
+                                       TextTrimming="CharacterEllipsis"
+                                       MaxHeight="80"
+                                       HorizontalAlignment="Center"/>
+                        </StackPanel>
                         
                         <!-- Price and Button -->
-                        <StackPanel Orientation="Horizontal" 
+                        <StackPanel Grid.Row="2" Orientation="Horizontal" 
                                     HorizontalAlignment="Stretch" 
                                     Spacing="20" 
                                     VerticalAlignment="Bottom">
@@ -209,7 +211,7 @@
                                     Padding="10, 5"/>
                         </StackPanel>
                         
-                    </StackPanel>
+                    </Grid>
                 </Border>
                 
             </UniformGrid>

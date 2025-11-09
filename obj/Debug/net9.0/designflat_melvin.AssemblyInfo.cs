@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("designflat_melvin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb5e5b33d23023ef7eb2977517bf2e97ac7a56af")]
 [assembly: System.Reflection.AssemblyProductAttribute("designflat_melvin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("designflat_melvin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
