@@ -1,0 +1,221 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             x:Class="designflat_melvin.EatInView"
+             mc:Ignorable="d"
+             d:DesignWidth="800" d:DesignHeight="500">
+
+    <Border Background="White"
+            Margin="25"
+            CornerRadius="8"
+            ClipToBounds="True">
+        
+        <ScrollViewer VerticalScrollBarVisibility="Auto"
+                      HorizontalScrollBarVisibility="Disabled">
+            
+            <UniformGrid Columns="3" Rows="1" HorizontalAlignment="Stretch">
+                
+                <!-- Burger Card -->
+                <Border Width="500" 
+                        Height="500"
+                        Margin="10" 
+                        Background="White"
+                        BorderBrush="#E0E0E0"
+                        BorderThickness="1"
+                        CornerRadius="8"
+                        Padding="20">
+                    
+                    <StackPanel Spacing="15" VerticalAlignment="Top">
+                        
+                        <!-- Title -->
+                        <TextBlock Text="Burger"
+                                   FontSize="20"
+                                    Foreground="#555"
+                                   FontWeight="Bold"
+                                   HorizontalAlignment="Center"
+                                   TextAlignment="Center"
+                                   Margin="0, 0, 0, 10"/>
+                        
+                        <!-- Image -->
+                        <Border Height="250"
+                                Background="White"
+                                CornerRadius="8"
+                                HorizontalAlignment="Center">
+                            <Image Source="/Assets/cheeseburger.png"
+                                   Stretch="Uniform"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"/>
+                        </Border>
+                        
+                        <!-- Description -->
+                        <TextBlock Text="Lorem ipsum is a dummy text which is used as a placeholder"
+                                   FontSize="14"
+                                   Foreground="#555"
+                                   TextWrapping="Wrap"
+                                   TextTrimming="CharacterEllipsis"
+                                   MaxHeight="80"
+                                   HorizontalAlignment="Center"
+                                   Margin="0, 10, 0, 15"/>
+                        
+                        <!-- Price and Button -->
+                        <StackPanel Orientation="Horizontal" 
+                                    HorizontalAlignment="Stretch" 
+                                    Spacing="20" 
+                                    VerticalAlignment="Bottom">
+                            <TextBlock Text="$13"
+                                       FontSize="24"
+                                       FontWeight="Bold"
+                                       Foreground="#E53935"
+                                       VerticalAlignment="Center"/>
+                            <Button Content="Read more"
+                                    Background="#B8860B"
+                                    Foreground="White"
+                                    BorderThickness="0"
+                                    FontSize="16"
+                                    HorizontalAlignment="Right"
+                                    HorizontalContentAlignment="Right"
+                                    VerticalAlignment="Center"
+                                    Padding="10, 5"/>
+                        </StackPanel>
+                        
+                    </StackPanel>
+                </Border>
+                
+                <!-- Cake Card -->
+                <Border Width="500" Height="500" 
+                        Margin="10" 
+                        Background="White"
+                        BorderBrush="#E0E0E0"
+                        BorderThickness="1"
+                        CornerRadius="8"
+                        Padding="20">
+                    
+                    <StackPanel Spacing="15" VerticalAlignment="Top">
+                        
+                        <!-- Title -->
+                        <TextBlock Text="Cake"
+                                   FontSize="20"
+                                    Foreground="#555"
+                                   FontWeight="Bold"
+                                   HorizontalAlignment="Center"
+                                   TextAlignment="Center"
+                                   Margin="0, 0, 0, 10"/>
+                        
+                        <!-- Image for Cake -->
+                        <Border Height="250"
+                                Background="Transparent"
+                                CornerRadius="8"
+                                HorizontalAlignment="Center">
+                            <Image Source="/Assets/cake.png"
+                                   Stretch="Uniform"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"/>
+                        </Border>
+                        
+                        <!-- Description -->
+                        <TextBlock Text="Lorem ipsum is a dummy text which is used as a placeholder"
+                                   FontSize="14"
+                                   Foreground="#555"
+                                   TextWrapping="Wrap"
+                                   TextTrimming="CharacterEllipsis"
+                                   MaxHeight="80"
+                                   HorizontalAlignment="Center"
+                                   Margin="0, 10, 0, 15"/>
+                        
+                        <!-- Price and Button -->
+                        <StackPanel Orientation="Horizontal" 
+                                    HorizontalAlignment="Stretch" 
+                                    Spacing="20" 
+                                    VerticalAlignment="Bottom">
+                            <TextBlock Text="$23"
+                                       FontSize="24"
+                                       FontWeight="Bold"
+                                       Foreground="#E53935"
+                                       VerticalAlignment="Center"/>
+                            <Button Content="Read more"
+                                    Background="#B8860B"
+                                    Foreground="White"
+                                    BorderThickness="0"
+                                    FontSize="16"
+                                    HorizontalAlignment="Right"
+                                    HorizontalContentAlignment="Right"
+                                    VerticalAlignment="Center"
+                                    Padding="10, 5"/>
+                        </StackPanel>
+                        
+                    </StackPanel>
+                </Border>
+                
+                <!-- Pizza Card -->
+                <Border Width="500" Height="500" 
+                        Margin="10" 
+                        Background="White"
+                        BorderBrush="#E0E0E0"
+                        BorderThickness="1"
+                        CornerRadius="8"
+                        Padding="20">
+                    
+                    <StackPanel Spacing="15" VerticalAlignment="Top">
+                        
+                        <!-- Title -->
+                        <TextBlock Text="Pizza"
+                                   FontSize="20"
+                                    Foreground="#555"
+                                   FontWeight="Bold"
+                                   HorizontalAlignment="Center"
+                                   TextAlignment="Center"
+                                   Margin="0, 0, 0, 10"/>
+                        
+                        <!-- Image for Pizza -->
+                        <Border Height="250"
+                                Background="Transparent"
+                                CornerRadius="8"
+                                HorizontalAlignment="Center">
+                            <Image Source="/Assets/pidzza.png"
+                                   Stretch="Uniform"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"/>
+                        </Border>
+                        
+                        <!-- Description -->
+                        <TextBlock Text="Lorem ipsum is a dummy text which is used as a placeholder"
+                                   FontSize="14"
+                                   Foreground="#555"
+                                   TextWrapping="Wrap"
+                                   TextTrimming="CharacterEllipsis"
+                                   MaxHeight="80"
+                                   HorizontalAlignment="Center"
+                                   Margin="0, 10, 0, 15"/>
+                        
+                        <!-- Price and Button -->
+                        <StackPanel Orientation="Horizontal" 
+                                    HorizontalAlignment="Stretch" 
+                                    Spacing="20" 
+                                    VerticalAlignment="Bottom">
+                            <TextBlock Text="$45"
+                                       FontSize="24"
+                                       FontWeight="Bold"
+                                       Foreground="#E53935"
+                                       VerticalAlignment="Center"/>
+                            <Button Content="Read more"
+                                    Background="#B8860B"
+                                    Foreground="White"
+                                    BorderThickness="0"
+                                    FontSize="16"
+                                    HorizontalAlignment="Right"
+                                    HorizontalContentAlignment="Right"
+                                    VerticalAlignment="Center"
+                                    Padding="10, 5"/>
+                        </StackPanel>
+                        
+                    </StackPanel>
+                </Border>
+                
+            </UniformGrid>
+            
+        </ScrollViewer>
+        
+    </Border>
+
+</UserControl>

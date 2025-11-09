@@ -1,0 +1,166 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:fi="clr-namespace:FluentIcons.Avalonia;assembly=FluentIcons.Avalonia"
+        xmlns:fic="clr-namespace:FluentIcons.Common;assembly=FluentIcons.Common"
+        xmlns:local="clr-namespace:designflat_melvin"
+        mc:Ignorable="d" d:DesignWidth="1280" d:DesignHeight="720"
+        x:Class="designflat_melvin.MainWindow" 
+        Title="Fast Foods UI"
+        Background="#F5F5F5"
+        WindowState="Maximized">
+
+    <Window.Styles>
+        <Style Selector="Button.MenuButton">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#AAA"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="Padding" Value="12, 10"/>
+            <Setter Property="Margin" Value="0, 5"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="CornerRadius" Value="5"/>
+        </Style>
+
+        <Style Selector="Button.MenuButton:pointerover">
+            <Setter Property="Background" Value="#333"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+
+        <Style Selector="Button.MenuButton.Active">
+            <Setter Property="Background" Value="#E53935"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+    </Window.Styles>
+
+    <Grid ColumnDefinitions="250, *">
+
+        <Border Grid.Column="0"
+                Background="#1E1E1E">
+            
+            <Grid RowDefinitions="Auto, *, Auto">
+                
+                <!-- 1. Logo Area -->
+                <StackPanel Grid.Row="0" Spacing="10" Margin="15, 20">
+                    <StackPanel Orientation="Horizontal" Spacing="12" HorizontalAlignment="Left">
+                        <!-- Placeholder Logo -->
+                        <Border Width="50" Height="50" Background="#E53935" CornerRadius="8">
+                            <TextBlock Text="FF" Foreground="White" FontWeight="Bold" FontSize="24"
+                                       HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        
+                        <StackPanel Spacing="0" VerticalAlignment="Center">
+                            <TextBlock Text="Fast Foods" Foreground="White" FontSize="18" FontWeight="Bold"/>
+                            <TextBlock Text="Restaurants" Foreground="#AAA" FontSize="12"/>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+
+                <!-- 2. Menu Navigasi (IKON SUDAH DIGANTI) -->
+                <StackPanel Grid.Row="1" Spacing="5" Margin="10, 20" VerticalAlignment="Top">
+                    
+                    <Button x:Name="HomeButton" Classes="MenuButton">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <fi:SymbolIcon Symbol="{x:Static fic:Symbol.Home}" FontSize="16" />
+                            <TextBlock Text="Home"/>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="EatInButton" Classes="MenuButton">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <fi:SymbolIcon Symbol="{x:Static fic:Symbol.FoodCake}" FontSize="16" />
+                            <TextBlock Text="Eat-In"/>
+                        </StackPanel>
+                    </Button>
+                    <Button Classes="MenuButton">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <fi:SymbolIcon Symbol="{x:Static fic:Symbol.ShoppingBag}" FontSize="16" />
+                            <TextBlock Text="Collection"/>
+                        </StackPanel>
+                    </Button>
+                    <Button Classes="MenuButton">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <fi:SymbolIcon Symbol="{x:Static fic:Symbol.VehicleTruck}" FontSize="16" />
+                            <TextBlock Text="Delivery"/>
+                        </StackPanel>
+                    </Button>
+                    <Button Classes="MenuButton">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <fi:SymbolIcon Symbol="{x:Static fic:Symbol.ShoppingBag}" FontSize="16" />
+                            <TextBlock Text="Take Away"/>
+                        </StackPanel>
+                    </Button>
+                    <Button Classes="MenuButton">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <fi:SymbolIcon Symbol="{x:Static fic:Symbol.Money}" FontSize="16" />
+                            <TextBlock Text="Driver Payment"/>
+                        </StackPanel>
+                    </Button>
+                    <Button Classes="MenuButton">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <fi:SymbolIcon Symbol="{x:Static fic:Symbol.People}" FontSize="16" />
+                            <TextBlock Text="Customers"/>
+                        </StackPanel>
+                    </Button>
+                    
+                </StackPanel>
+
+                <!-- 3. Tombol Bantuan (Paling Bawah) (IKON SUDAH DIGANTI) -->
+                <Button Grid.Row="2" Classes="MenuButton" VerticalAlignment="Bottom" Margin="10">
+                    <StackPanel Orientation="Horizontal" Spacing="15">
+                        <fi:SymbolIcon Symbol="{x:Static fic:Symbol.Question}" FontSize="16" />
+                        <TextBlock Text="Help"/>
+                    </StackPanel>
+                </Button>
+                
+            </Grid>
+        </Border>
+
+
+        <Grid Grid.Column="1" RowDefinitions="Auto, *">
+            
+            <Border Grid.Row="0" 
+                    Background="White"
+                    Height="60"
+                    Padding="20, 0"
+                    BorderThickness="0, 0, 0, 1"
+                    BorderBrush="#E0E0E0">
+                
+                <Grid ColumnDefinitions="*, Auto">
+                    <TextBlock Grid.Column="0"
+                               Text="C# UI Designing By SaLaaR HuSceyN"
+                               VerticalAlignment="Center" HorizontalAlignment="Left"
+                               FontSize="14" Foreground="#555"/>
+
+                    <!-- Ikon-ikon Kanan Atas -->
+                    <StackPanel Grid.Column="1" 
+                                Orientation="Horizontal" 
+                                Spacing="15" 
+                                VerticalAlignment="Center">
+                        
+                        <!-- Ganti Foreground="#555" untuk mengubah warna ikon -->
+                        <fi:SymbolIcon Symbol="{x:Static fic:Symbol.Comment}" FontSize="20" Foreground="#555"/>
+                        <fi:SymbolIcon Symbol="{x:Static fic:Symbol.Chat}" FontSize="20" Foreground="#555"/>
+                        <fi:SymbolIcon Symbol="{x:Static fic:Symbol.Camera}" FontSize="20" Foreground="#555"/>
+                        
+                        <Border BorderBrush="#DDD" BorderThickness="1" Height="25" Margin="5,0"/>
+                        
+                        <fi:SymbolIcon Symbol="{x:Static fic:Symbol.Settings}" FontSize="20" Foreground="#555"/>
+                        <fi:SymbolIcon Symbol="{x:Static fic:Symbol.Warning}" FontSize="20" Foreground="#555"/>
+                        <fi:SymbolIcon Symbol="{x:Static fic:Symbol.Power}" FontSize="20" Foreground="#555"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <ContentControl Grid.Row="1" 
+                            x:Name="MainContent"
+                            Background="White"
+                            Margin="25"
+                            CornerRadius="8"
+                            ClipToBounds="True" />
+            
+        </Grid>
+        
+    </Grid>
+</Window>

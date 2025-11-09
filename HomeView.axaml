@@ -1,0 +1,69 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             x:Class="designflat_melvin.HomeView"
+             mc:Ignorable="d"
+             d:DesignWidth="800" d:DesignHeight="500">
+
+    <Border Background="White"
+            Margin="25"
+            CornerRadius="8"
+            ClipToBounds="True">
+        
+        <Grid ColumnDefinitions="*, *">
+            
+            <!-- Sisi Kiri: Teks Deskripsi -->
+            <StackPanel Grid.Column="0" 
+                        Margin="60, 40" 
+                        VerticalAlignment="Center"
+                        Spacing="5">
+                
+                <TextBlock Text="Only" FontSize="18" Foreground="Gray"/>
+                
+                <TextBlock Text="$19"
+                           FontSize="100"
+                           FontWeight="ExtraBold"
+                           Foreground="#F39C12" /> 
+
+                <TextBlock Text="Cheeseburger"
+                           FontSize="36" FontWeight="Bold"
+                           Foreground="#333" Margin="0, 5, 0, 0"/>
+
+                <TextBlock Text="With Onions and tomato and ketchup"
+                           FontSize="14" Foreground="Gray"
+                           Margin="0, 0, 0, 15"/>
+
+                <TextBlock Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco..."
+                           FontSize="14" Foreground="#555"
+                           TextTrimming="CharacterEllipsis" Margin="0, 10, 40, 10"
+                           Width="300"/>
+                
+                <Button Content="Order Now"
+                        Background="#B8860B"
+                        Foreground="white"
+                        FontWeight="Bold"
+                        FontSize="16"
+                        Padding="30, 12"
+                        CornerRadius="5"
+                        Margin="0, 25, 0, 0"
+                        HorizontalAlignment="Left"/>
+            </StackPanel>
+            
+            
+            <!-- Sisi Kanan: Gambar Burger -->
+            <Border Grid.Column="1" 
+                    Background="White"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch">
+                
+                <Image Source="/Assets/cheeseburger.png"
+                       Stretch="Uniform"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"/>
+            </Border>
+            
+        </Grid>
+    </Border>
+
+</UserControl>
