@@ -15,7 +15,7 @@ A simple desktop app for a fast foods restaurant interface, built with Avalonia 
 1. **Prerequisites**: Install .NET 9.0 SDK.
 
 2. **Setup**: 
-   - Clone or navigate to the project: `cd /home/mellow/code/C#/designflat_melvin`.
+   - Clone or navigate to the project: `cd DekstopApp-FastFood`.
    - Restore packages: `dotnet restore`.
 
 3. **Build**: Run `dotnet build` (ignores minor warnings).
